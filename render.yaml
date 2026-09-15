@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: fardeen-zainab-valima
+    name: fardeen-zainab-valima-wedding-invitation
     runtime: static
     buildCommand: echo "static site"
     staticPublishPath: .
