@@ -9,7 +9,7 @@ services:
         source: /
         destination: /index.html
   - type: web
-    name: tahaseen-uledulla-wedding-invitation
+    name: tahaseen-ubedulla-wedding-invitation
     runtime: static
     buildCommand: mkdir -p dist && cp makandar.html dist/index.html && cp background-music.mp3 dist/background-music.mp3
     staticPublishPath: ./dist
