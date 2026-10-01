@@ -11,9 +11,5 @@ services:
   - type: web
     name: tahaseen-uledulla-wedding-invitation
     runtime: static
-    buildCommand: echo "static site"
-    staticPublishPath: .
-    routes:
-      - type: rewrite
-        source: /
-        destination: /makandar.html
+    buildCommand: mkdir -p dist && cp makandar.html dist/index.html && cp background-music.mp3 dist/background-music.mp3
+    staticPublishPath: ./dist
