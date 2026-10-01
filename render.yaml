@@ -8,3 +8,12 @@ services:
       - type: rewrite
         source: /
         destination: /index.html
+  - type: web
+    name: tahaseen-uledulla-wedding-invitation
+    runtime: static
+    buildCommand: echo "static site"
+    staticPublishPath: .
+    routes:
+      - type: rewrite
+        source: /
+        destination: /makandar.html
